@@ -1,0 +1,13 @@
+.headerContainer {
+  color: #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 1rem 1rem;
+  background: black;
+}
+
+.headerLinks {
+  color: #ccc;
+}
