@@ -2,12 +2,22 @@
   color: #ccc;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 1.6rem;
   padding: 1rem 1rem;
-  background: black;
+  background-color: #094261;
 }
 
 .headerLinks {
   color: #ccc;
+  margin: auto 6rem;
+  padding: 2rem;
+  transition: all ease-in-out 0.4s;
+  text-decoration: none;
+}
+
+.headerLinks:hover {
+  color: white;
+  transform: scale(1.1);
+  text-decoration: none;
 }
