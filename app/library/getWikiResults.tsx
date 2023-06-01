@@ -5,8 +5,8 @@ export default async function getWikiResults(search: searchInputType) {
 
   let searchParams = new URLSearchParams({
     action: "query",
-    generator: "seacrh",
-    gsrseacrh: search,
+    generator: "search",
+    gsrsearch: search,
     gsrlimit: "20",
     prop: "info|extracts|images",
     exchars: "100",
