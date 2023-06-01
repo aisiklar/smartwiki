@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./userinput.module.css";
+import getWikiResults from "../library/getWikiResults";
 
 export default function UserInput() {
   const [userInput, setUserInput] = useState("");
@@ -10,8 +11,12 @@ export default function UserInput() {
 
   // METHODS
 
-  const searchButtonHandler = () => {
+  const searchButtonHandler = async () => {
     console.log("search button clicked!");
+    let wikiResults = getWikiResults(userInput);
+    let data = await wikiResults;
+    setUserInput("");
+    console.log("data received from getWikiResults", data);
   };
 
   return (

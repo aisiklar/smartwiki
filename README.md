@@ -1,10 +1,7 @@
 under development (just started)
 soon to be updated.
 
-to do
 
-- [x] header comp, button and other items.
-- [x] header comp. make a new comp for user input and make it "client side." Header should be "server side"
-- [ ] measure time to first paint (TTFP) on Lighthouse
-- [ ] integrate wikipedia api
-- [ ] dynamic routers from user input
+## wiki api çalışması
+
+https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&titles=Pet_door&formatversion=2&rvprop=content&rvslots=* 
