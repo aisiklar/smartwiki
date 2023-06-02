@@ -1,4 +1,6 @@
-"use client";
+import { Metadata } from "next";
+
+import { getWikiResults } from "../library/getWikiResults";
 
 type Props = {
   params: {
@@ -6,7 +8,25 @@ type Props = {
   };
 };
 
-export default function searchParam({ params: { searchItem } }: Props) {
-  console.log("params: ", searchItem);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  console.log("in generateMetaData: params: ", params);
+  return {
+    title: `wiki-${params.searchItem}`,
+    description: `results for ${params.searchItem}, smart Wiki App, developed by m-alptekin`,
+  };
+}
+
+/* export default function searchParam({ params }: Props) {}
+ */
+
+//typescript 2
+export default async function SearchUserInput({
+  params: { searchItem },
+}: Props) {
+  console.log("searchItem: ", searchItem, typeof searchItem);
+  let wikiResults = await getWikiResults(searchItem);
+  let data = await wikiResults;
+  console.log("data received from wiki: ", data);
+
   return <div></div>;
 }

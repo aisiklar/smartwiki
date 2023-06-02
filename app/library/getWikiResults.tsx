@@ -1,6 +1,6 @@
 type searchInputType = string;
 
-export default async function getWikiResults(search: searchInputType) {
+export async function getWikiResults(search: searchInputType) {
   console.log("in getWikiResults, passed in search: ", search);
 
   let searchParams = new URLSearchParams({

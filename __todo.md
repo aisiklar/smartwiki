@@ -4,7 +4,8 @@
 
 ## next / doing
 
-- [] working on searchItem comp. Trying to understand the props and types.
+- [x] working on searchItem comp. Trying to understand the props and types.
+- [ ] api integration to the component and listing the items
 
 # version-1
 
@@ -13,7 +14,7 @@
 - [x] header comp, button and other items.
 - [x] header comp. make a new comp for user input and make it "client side." Header should be "server side"
 - [ ] integrate wikipedia api
-- [ ] dynamic routers from user input
+- [x] dynamic routers from user input
 
 ## Priority-2
 

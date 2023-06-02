@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import styles from "./userinput.module.css";
-import getWikiResults from "../library/getWikiResults";
+//import getWikiResults from "../library/getWikiResults";
 import { useRouter } from 'next/navigation';
+
 
 export default function UserInput() {
   const [userInput, setUserInput] = useState("");
