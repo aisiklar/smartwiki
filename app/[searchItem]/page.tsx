@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-
+import { notFound } from "next/navigation";
 import { getWikiResults } from "../library/getWikiResults";
 
 type Props = {
@@ -27,6 +27,30 @@ export default async function SearchUserInput({
   let wikiResults = await getWikiResults(searchItem);
   let data = await wikiResults;
   console.log("data received from wiki: ", data);
+  console.log(
+    "typeof data.query.pages received from wiki: ",
+    typeof data.query.pages
+  );
+  //console.log("data.query.pages received from wiki: ", data.query.pages);
 
-  return <div></div>;
+  let resultsArray: wikiResultsArr = [];
+
+  for (let item of Object.values(data.query.pages)) {
+    resultsArray.push(item as wikiResult);
+  }
+  console.log("resultsArray:", resultsArray);
+
+  if (!data) {
+    notFound();
+  }
+
+  return (
+    <div>
+      {resultsArray.map((item) => (
+        <p key={item.pageid}>
+          {item.title}, <br></br> {item.extract}
+        </p>
+      ))}
+    </div>
+  );
 }

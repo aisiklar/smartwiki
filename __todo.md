@@ -5,7 +5,15 @@
 ## next / doing
 
 - [x] working on searchItem comp. Trying to understand the props and types.
-- [ ] api integration to the component and listing the items
+- [x] notfound page
+- [x] api integration to the component 
+- [x] listing the items
+- [ ] new comp. for listing and formatting
+- [ ] error page
+- [ ] metadata / seo arrangements
+- [ ] mobile design / responsive page
+- [ ] comparison with D.Gray tutorial, learn, change if necessary!
+- [ ] publish
 
 # version-1
 
@@ -20,3 +28,6 @@
 
 - [ ] measure time to first paint (TTFP) on Lighthouse
 - [ ]
+
+
+# version-2
