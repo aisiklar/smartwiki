@@ -9,10 +9,16 @@
 - [x] api integration to the component 
 - [x] listing the items
 - [ ] new comp. for listing and formatting
+  - [x] list items
+  - [x] links to wiki page
+  - [x] styling
 - [ ] error page
 - [ ] metadata / seo arrangements
 - [ ] mobile design / responsive page
 - [ ] comparison with D.Gray tutorial, learn, change if necessary!
+  - [ ] how did he handle the api results? I created a new array and pushed items inside.
+  - [ ] other things?
+- [ ] last check, regression
 - [ ] publish
 
 # version-1

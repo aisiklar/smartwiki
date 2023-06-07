@@ -8,12 +8,13 @@ export async function getWikiResults(search: searchInputType) {
     generator: "search",
     gsrsearch: search,
     gsrlimit: "20",
-    prop: "extracts|images",
+    prop: "info|extracts|pageimages",
     exchars: "100",
     exintro: "true",
     explaintext: "true",
     exlimit: "max",
     format: "json",
+    inprop: "url",
     origin: "*",
   });
 
