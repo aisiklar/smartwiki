@@ -3,6 +3,7 @@
 import styles from "./listitem.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 type Props = {
   data: wikiResult;
@@ -13,6 +14,23 @@ type Props = {
 export default function ListItem({ data }: Props) {
   console.log("data: ", data);
 
+  
+  const [imageSize, setImageSize] = useState(80);
+  
+  useEffect(()=> {
+    console.log("window.innerWidth: ", window.innerWidth);
+    if (window.innerWidth < 600) {
+      setImageSize(50)
+    }
+    
+  }, [])
+
+
+  /* useEffect(() => {
+    console.log("creating error intentionally!");
+    throw new Error("my error");
+  }, []); */
+
   let contents = (
     <div className={styles.listItemContainer}>
       <div className={styles.thumbnail}>
@@ -20,8 +38,8 @@ export default function ListItem({ data }: Props) {
           <Image
             src={data.thumbnail.source}
             alt={`${data.title} pic`}
-            width={80}
-            height={80}
+            width={imageSize}
+            height={imageSize}
           ></Image>
         ) : null}
       </div>

@@ -12,9 +12,9 @@
   - [x] list items
   - [x] links to wiki page
   - [x] styling
-- [ ] error page
-- [ ] metadata / seo arrangements
-- [ ] mobile design / responsive page
+- [x] error page
+- [x] metadata / seo arrangements
+- [x] mobile design / responsive page
 - [ ] comparison with D.Gray tutorial, learn, change if necessary!
   - [ ] how did he handle the api results? I created a new array and pushed items inside.
   - [ ] other things?

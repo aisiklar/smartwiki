@@ -52,3 +52,50 @@
   color: #ccc;
   text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+  .textWrapper {
+    width: 300px;
+    font-size: 1.2rem;
+  }
+
+  .thumbnail {
+    width: 50px;
+  }
+  
+
+  .linkWrapper {
+    width: 50px;
+    padding: 1rem 1.5rem;
+  }
+
+  .links {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .links:hover {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .textWrapper {
+    width: 250px;
+    font-size: 1.2rem;
+  }
+
+  .linkWrapper {
+    width: 50px;
+    padding: 1rem 1rem;
+  }
+
+  .links {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .links:hover {
+    font-size: 1.2rem;
+  }
+}

@@ -27,6 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function SearchUserInput({
   params: { searchItem },
 }: Props) {
+  
+
   console.log("searchItem: ", searchItem, typeof searchItem);
   let wikiResults = await getWikiResults(searchItem);
   let data = await wikiResults;
