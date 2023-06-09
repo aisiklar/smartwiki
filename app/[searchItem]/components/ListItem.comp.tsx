@@ -12,13 +12,13 @@ type Props = {
 //export default function ListItem(props: Props) {
 
 export default function ListItem({ data }: Props) {
-  console.log("data: ", data);
+  //console.log("data: ", data);
 
   
   const [imageSize, setImageSize] = useState(80);
   
   useEffect(()=> {
-    console.log("window.innerWidth: ", window.innerWidth);
+    //console.log("window.innerWidth: ", window.innerWidth);
     if (window.innerWidth < 600) {
       setImageSize(50)
     }

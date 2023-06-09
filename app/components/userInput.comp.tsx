@@ -10,14 +10,14 @@ export default function UserInput() {
   const router = useRouter();
 
   //LOGS
-  console.log("userInput: ", userInput);
+  //console.log("userInput: ", userInput);
 
   // METHODS
 
   const searchButtonHandler = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("search button clicked!");
-    console.log('routing to userInput');
+    //console.log("search button clicked!");
+    //console.log('routing to userInput');
     router.push(`/${userInput}/`)
     //let wikiResults = getWikiResults(userInput);
     //let data = await wikiResults;

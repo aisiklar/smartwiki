@@ -1,7 +1,7 @@
 import * as React from "react";
 
-const SvgComponent = (props) => {
-  console.log("props.color", props.color);
+const SvgComponent = (props: { color: string }) => {
+  //console.log("props.color", props.color);
 
   return (
     <svg

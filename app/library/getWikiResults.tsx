@@ -1,7 +1,7 @@
 type searchInputType = string;
 
 export async function getWikiResults(search: searchInputType) {
-  console.log("in getWikiResults, passed in search: ", search);
+  //console.log("in getWikiResults, passed in search: ", search);
 
   let searchParams = new URLSearchParams({
     action: "query",
@@ -22,10 +22,10 @@ export async function getWikiResults(search: searchInputType) {
 
   let fetchResult = await fetch(url);
 
-  console.log("fetchResult: ", fetchResult);
+  //console.log("fetchResult: ", fetchResult);
 
   let result = fetchResult.json();
 
-  console.log("result: ", result);
+  //console.log("result: ", result);
   return result;
 }
